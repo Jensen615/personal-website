@@ -152,3 +152,49 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 2%; */
+  /* border-top: 2px solid black;
+  border-bottom: 2px solid black; */
+}
+
+.main__img {
+  flex: 1;
+  max-width: 50%;
+  padding: 5%;
+  overflow: hidden;
+}
+
+#main__img {
+  display: block;
+  max-width: 80%;
+  margin-left: auto;
+  height: auto;
+  border-radius: 50%;
+}
+
+.main__text {
+  flex: 1;
+  max-width: 50%;
+  padding: 5%;
+  border-left: 1px solid black;
+}
+
+#main__text {
+  max-width: 80%;
+  margin-right: auto;
+  font-size: x-large;
+}
+
+.skills {
+  text-align: center;
+}
+
+.skills h1 {
+  display: inline-block;
+  margin: 0;
+}
