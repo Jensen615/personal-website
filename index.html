@@ -70,26 +70,11 @@
 
     <!-- Projects Section -->
     <div class="projects">
-      <h1 class="section__header">Projects&nbsp;&nbsp;</h1>
+      <a id="projects">
+        <h1 class="section__header">Projects&nbsp;</h1>
+      </a>
       <div class="projects__container">
         <div class="image-grid">
-          <!-- <img
-            class="image-grid-col-2 image-grid-row-2"
-            src="images/skool.png"
-            alt="skoolfit"
-          />
-          <img
-            class="image-grid-col-2 image-grid-row-2"
-            src="images/ran4.png"
-            alt="ran4"
-          />
-          <img src="images/ran1.png" alt="ran1" />
-          <img src="images/ran3.png" alt="ran3" />
-          <img src="images/ran2.png" alt="ran2" />
-          <img src="images/stats.png" alt="stats" /> -->
-
-          <!-- class="image-grid-col-2 image-grid-row-2" -->
-
           <div class="image-grid-col-2 image-grid-row-2">
             <a href="/personal-website/"
               ><img src="images/ran3.png" alt="ran3"
@@ -115,6 +100,138 @@
             ><img src="images/stats.png" alt="stats"
           /></a>
         </div>
+      </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="experience">
+      <h1 class="section__header">Experience&nbsp;</h1>
+      <div class="exp__container">
+        <img id="goog__img" src="images/goog-gif.gif" alt="" />
+
+        <div class="resume__item resume_work">
+          <div class="company__title">
+            <p>
+              <span class="company__name">Google</span>
+              <span class="location1"><em> Sunnyvale, CA</em></span>
+            </p>
+          </div>
+          <div class="job__title">
+            <em
+              >Software Engineering (SRE) Intern
+              <span class="date1"> May 2022 - Aug. 2022</span>
+            </em>
+          </div>
+
+          <div class="info">
+            <ul>
+              <li>
+                Deployed an Insights Diagnostic Tool that generates dynamic
+                information to significantly reduce SRE on-call
+                mean-time-to-respond (MTTR) when triaging an influx of alerts
+                and outages
+              </li>
+              <li>
+                Increased coverage for over ~55% of incidents created within
+                Traffic Interconnect SRE (past 6 months)
+              </li>
+              <li>
+                Implemented, launched, and connected the server that handles
+                RPCs from the incident management platform
+              </li>
+              <li>
+                <b>Tools and Languages:</b> Go, Python, Boq, Goa, Tin, Stubby
+                RPCs, Google internal tools
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <img id="yt__img" src="images/yt-gif.gif" alt="" />
+
+        <div class="resume__item resume_work">
+          <div class="company__title">
+            <p>
+              <span class="company__name">Google</span>
+              <span class="company__sub"> YouTube Product</span>
+              <span class="location2"><em> Remote, NY</em></span>
+            </p>
+          </div>
+          <div class="job__title">
+            <em
+              >STEP Software Engineering Intern
+              <span class="date2"> June 2021 - Sept. 2021</span>
+            </em>
+          </div>
+
+          <div class="info">
+            <ul>
+              <li>
+                Developed Command Line Interface to automate C++ code generation
+                and modify protocol buffer definitions to reduce the workload
+                faced during new product integration by ~7% (expected yearly
+                OKR: 33%)
+              </li>
+              <li>
+                Constructed a protobuf parser to efficiently map all (nested)
+                definitions into a tree-like structure to support new additions
+                and updates performed by the CLI tool
+              </li>
+              <li>
+                Integrated tool with various CitC workspaces for better reach
+                across YouTube Trust & Safety engineers
+              </li>
+              <li>
+                <b>Tools and Languages:</b> Go, Python, Boq, Goa, Tin, Stubby
+                RPCs, Google internal tools
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <img id="up__img" src="images/unipantry.png" alt="" />
+
+        <div class="resume__item resume_work">
+          <div class="company__title">
+            <p>
+              <span class="company__name">UniPantry</span>
+              <span class="location3"><em> Ithaca, NY</em></span>
+            </p>
+          </div>
+          <div class="job__title">
+            <em
+              >Software Engineering Intern
+              <span class="date3"> Feb. 2021 - June 2021</span>
+            </em>
+          </div>
+
+          <div class="info">
+            <ul>
+              <li>
+                Architected the Cloud Firestore NoSQL database to maintain valid
+                user information and recipes
+              </li>
+              <li>
+                Lead app integration project from real-time database to
+                react-native frontend utilizing backend CRUD functions and
+                RESTful API calls to our dynamic web server. ~90% decrease in
+                rendering times
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="work__img">
+          <img id="work__img" src="images/google-gif.gif" />
+        </div>
+
+        <div class="work__text">
+          <p id="work__text">
+            Hi there! I'm Jensen Andre. A recent Computer Science graduate from
+            Cornell University, with a strong focus in back-end engineering,
+            databases, and networks.
+          </p>
+        </div> -->
       </div>
     </div>
 
