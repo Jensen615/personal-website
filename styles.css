@@ -304,9 +304,10 @@
   /* 55% is good, 800px is good  */
   max-width: 88%;
   margin: 0 auto;
-  margin-right: 2rem;
+  margin-right: 6rem;
+  margin-bottom: 5rem;
   font: 500 100%/1.5 system-ui;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 #goog__img {
