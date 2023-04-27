@@ -443,3 +443,91 @@
     background: rgba(white, 0.8);
   }
 }
+
+.about__header {
+  text-align: left;
+  font-size: 24pt;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: 0;
+  margin-left: 5rem;
+  /* border: 2px solid black; */
+}
+
+.about__title {
+  /* display: inline-block; */
+  /* text-align: left; */
+  font-size: 32pt;
+  /* padding-top: 10%; */
+  /* padding-bottom: 5%; */
+  margin: 0;
+  /* border: 2px solid black; */
+}
+
+.about__list {
+
+  /* display: inline-block; */
+  /* text-align: left; */
+  list-style-type: none;
+  font-size: 12pt;
+  /* border: 2px solid black; */
+}
+
+.about__container {
+  display: grid;
+  /* padding: 2rem; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  grid-template-columns: 300px 2fr;
+  gap: 1rem;
+  align-items: center;
+  /* 55% is good, 800px is good  */
+  max-width: 88%;
+  margin: 0 auto;
+  margin-right: 6rem;
+  margin-bottom: 5rem;
+  font: 500 100%/1.5 system-ui;
+  /* border: 2px solid black; */
+}
+
+#hike__img {
+  /* margin-top: -3rem; */
+  max-width: 90%;
+  width: 280px;
+  height: auto;
+  margin-bottom: 3rem;
+  /* margin-left: 0rem; */
+  /* border: 2px solid black; */
+}
+
+#pool__img {
+  /* margin-top: -5rem; */
+  max-width: 90%;
+  width: 280px;
+  height: auto;
+  margin-bottom: 3rem;
+  /* margin-left: 4rem; */
+  /* border: 2px solid black; */
+}
+
+#travel__img {
+  /* margin-top: -5rem; */
+  max-width: 90%;
+  width: 280px;
+  height: auto;
+  /* margin-bottom: 3rem; */
+  /* margin-left: 4rem; */
+  /* border: 2px solid black; */
+}
+
+.about__item {
+  display: flexbox;
+  margin-right: auto;
+  /* position: relative; */
+  margin-left: -1rem;
+  /* margin-top: 2rem; */
+  font-size: 1.2rem;
+  /* border: 2px solid black; */
+  /* margin: -3rem 0 2rem 1rem; */
+  /* padding: 1rem; */
+}
