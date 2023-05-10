@@ -252,8 +252,8 @@
 
 .image-grid {
   --gap: 16px;
-  --num-cols: 4;
-  --row-height: 300px;
+  --num-cols: 3;
+  --row-height: 400px;
 
   box-sizing: border-box;
   padding: var(--gap);
@@ -400,6 +400,7 @@ body.popup-open {
 }
 
 .company__name {
+  flex-grow: 1;
   font-size: 1.6rem;
   font-weight: 600;
   /* border: 2px solid black; */
@@ -412,9 +413,12 @@ body.popup-open {
 }
 
 .location1 {
+  flex-grow: 1;
   font-size: 1.2rem;
   font-weight: lighter;
-  margin-left: 40.5rem;
+  margin-left: 69.5%;
+  /* margin-left: 40.5rem; */
+  margin-right: auto;
   /* border: 2px solid black; */
 }
 
@@ -443,7 +447,10 @@ body.popup-open {
 }
 
 .date1 {
+  flex-grow: 1;
   margin-left: 28rem;
+  margin-right: auto;
+  /* border: 2px solid black; */
 }
 
 .date2 {

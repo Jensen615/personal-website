@@ -10,16 +10,8 @@ menu.addEventListener("click", function () {
 const tabs = document.querySelectorAll('.work__tab1 input[type="radio"], .work__tab2 input[type="radio"], .work__tab3 input[type="radio"]');
 const tabContents = document.querySelectorAll('.tab-content');
 
-console.log("printing tabs: ")
-console.log(tabs)
-console.log()
-console.log("printing tabContents: ")
-console.log(tabContents)
-
 const activeTabs = new Set();
-console.log(tabs)
 let timeoutId;
-
 
 tabs.forEach((tab, index) => {
   tab.addEventListener('change', () => {
