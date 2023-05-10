@@ -88,3 +88,37 @@ function fadeIn(element) {
     }
   }, interval);
 }
+
+
+// Get all popup elements
+const popups = document.querySelectorAll('.popup');
+
+// Add click event listeners to open popups
+document.querySelectorAll('.image-grid-col-2, .proj').forEach((item, index) => {
+  item.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent the default anchor tag behavior
+    popups[index].style.display = 'block';
+  });
+});
+
+// Add click event listeners to close popups
+document.querySelectorAll('.close').forEach((closeBtn, index) => {
+  closeBtn.addEventListener('click', (event) => {
+    event.stopPropagation();
+    popups[index].style.display = 'none';
+  });
+});
+
+// Add click event listener to close popups when clicking outside the popup
+document.addEventListener('click', (event) => {
+  const clickedElement = event.target;
+
+  // Check if the clicked element or its parent is outside any of the popups
+  const isOutsidePopups = Array.from(clickedElement.closest('.popup')).every((popup) => !popups.includes(popup));
+
+  if (isOutsidePopups) {
+    popups.forEach((popup) => {
+      popup.style.display = 'none';
+    });
+  }
+});

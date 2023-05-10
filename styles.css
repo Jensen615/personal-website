@@ -277,6 +277,36 @@
   grid-row: span 2;
 }
 
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
 @media screen and (max-width: 960px) {
   .image-grid {
     --num-cols: 2;
@@ -419,6 +449,10 @@
   margin-left: 31.4rem;
 }
 
+.team {
+  font-style: italic;
+  padding-bottom: 2%;
+}
 
 .tab__column {
   display: flex;
