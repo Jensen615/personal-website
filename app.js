@@ -97,6 +97,7 @@ const popups = document.querySelectorAll('.popup');
 document.querySelectorAll('.image-grid-col-2, .proj').forEach((item, index) => {
   item.addEventListener('click', (event) => {
     event.preventDefault(); // Prevent the default anchor tag behavior
+    document.body.classList.add('popup-open');
     popups[index].style.display = 'block';
   });
 });
@@ -105,6 +106,7 @@ document.querySelectorAll('.image-grid-col-2, .proj').forEach((item, index) => {
 document.querySelectorAll('.close').forEach((closeBtn, index) => {
   closeBtn.addEventListener('click', (event) => {
     event.stopPropagation();
+    document.body.classList.remove('popup-open');
     popups[index].style.display = 'none';
   });
 });
@@ -118,6 +120,7 @@ document.addEventListener('click', (event) => {
 
   if (isOutsidePopups) {
     popups.forEach((popup) => {
+      document.body.classList.remove('popup-open');
       popup.style.display = 'none';
     });
   }

@@ -278,6 +278,10 @@
   grid-row: span 2;
 }
 
+body.popup-open {
+  overflow: hidden;
+}
+
 .popup {
   display: none;
   position: fixed;
