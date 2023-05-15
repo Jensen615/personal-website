@@ -86,7 +86,7 @@ function fadeIn(element) {
 const popups = document.querySelectorAll('.popup');
 
 // Add click event listeners to open popups
-document.querySelectorAll('.image-grid-col-2, .proj').forEach((item, index) => {
+document.querySelectorAll('.proj').forEach((item, index) => {
   item.addEventListener('click', (event) => {
     event.preventDefault(); // Prevent the default anchor tag behavior
     document.body.classList.add('popup-open');

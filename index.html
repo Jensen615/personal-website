@@ -76,80 +76,235 @@
       </a>
       <div class="projects__container">
         <div class="image-grid">
+
           <div class="proj">
-            <a href="/personal-website/"
-              ><img src="images/career.png" alt="career"
-            /></a>
+            <a href="/personal-website/"><img class="cover-img" src="images/career.png" alt="career"></a>
             <div class="popup">
               <div class="popup-content">
+                <div class="popup-image">
+                  <img src="images/career.png" alt="career">
+                </div>
                 <span class="close">&times;</span>
-                <h3>Project Title 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>CareerFinders</h3>
+                <h4>GitHub:</h4>
+                <p>coming soon</p>
+                <h4>About:</h4>
+                <p>
+                  CareerFinders is designed to be a recommendation tool that utilizes input skill sets, personality traits, and job characteristics to suggest career fields or generalized roles that the user would be well-suited for. This application is intended for high school and college students to help them identify potential career paths that align with their interests and abilities.
+                </p>
+                <h4>Key Features:</h4>
+                <ul>
+                  <li>Query mapping from raw text to skills using spaCy’s TextCategorizer and gensim’s Word2Vec</li>
+                  <li>Efficient and accurate recommendation engine that matches input skills to careers</li>
+                  <li>Career to reviews mapping that pulls in reviews related to the recommended careers</li>
+                </ul>
+                <h4>Personal Contributions:</h4>
+                <ul>
+                  <li>
+                    Implemented the recommendation engine by:
+                    <ul class="rec-eng">
+                      <li>Creating tf-idf matrices</li>
+                      <li>Building an inverted index for skills</li>
+                      <li>Developing numerous data structures to support the term-by-term cosine similarity algorithm</li>
+                      <li>Mapping user input to the careers in our database</li>
+                    </ul>
+                  </li>
+                  <li>Implemented the recommendation algorithm, which accounts for the affinity scores each skill has in relation to the careers we have in our database.</li>
+                  <li>Generated output rankings for the careers we recommend to each user, based on the computed similarity score for each career.</li>
+                </ul>
+                <h4>Tools Used:</h4>
+                <p>Python, Flask, Docker, spaCy, gensim, numpy</p>
+                <h4>Team:</h4>
+                <ul>
+                  <li>Jensen</li>
+                  <li>Kassandra</li>
+                  <li>Josh</li>
+                  <li>Karim</li>
+                  <li>Rayan</li>
+                </ul>
               </div>
             </div>
           </div>
 
           <div class="proj">
-            <a href="/personal-website/"
-              ><img class="img-grid" src="images/asl.jpeg" alt="asl"
-            /></a>
+            <a href="/personal-website/"><img class="cover-img" src="images/asl.jpeg" alt="asl"></a>
             <div class="popup">
               <div class="popup-content">
+                <div class="popup-image">
+                  <img src="images/asl.jpeg" alt="asl">
+                </div>
                 <span class="close">&times;</span>
-                <h3>Project Title 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>ASL Translator App</h3>
+                <h4>GitHub:</h4>
+                <p>coming soon</p>
+                <h4>About:</h4>
+                <p>
+                  This project utilizes AI and ML for social good by creating an American Sign Language (ASL) translator app. Our aim is to improve communication between deaf and hearing individuals, promoting accessibility and breaking down barriers. The app has the potential to enhance accessibility in education, making it easier for students with hearing loss to participate and improving educational outcomes.
+                </p>
+
+                <h4>Key Features:</h4>
+                <ul>
+                  <li>Fine-tuned Convolutional Neural Network (CNN) classifier using TensorFlow, Pandas, and Numpy
+                    <ul class="rec-eng">
+                      <li>Achieved 99% accuracy on the Sign Language MNIST dataset</li>
+                      <li>Demonstrates accurate recognition and categorization of sign language gestures</li>
+                    </ul>
+                  </li>
+                  
+                  <li>User-friendly UI for the ASL sign language translator app</li>
+                  <li>Picture and video input functionality for seamless translation</li>
+                  <li>Sign recognition quizzes and flashcards for interactive learning</li>
+                  <li>Real-time translation capability for instant communication</li>
+                  <li>Integration of the ML model directly into the app for efficient processing and response</li>
+                </ul>
+
+                <h4>Personal Contributions:</h4>
+                <ul>
+                  <li>ML model integration into mobile app</li>
+                  <li>Fine-tuned real-time translation from picture input</li>
+                </ul>
+
+                <h4>Tools Used:</h4>
+                <p>Python, TensorFlow (CNNs), OpenCV, and TensorBoard</p>
+                <h4>Team:</h4>
+                <ul>
+                  <li>Jensen</li>
+                  <li>Andrii</li>
+                  <li>Jackson</li>
+                </ul>
               </div>
             </div>
           </div>
 
           <div class="proj">
-            <a href="/personal-website/"
-              ><img src="images/claw.jpeg" alt="bentobox"
-            /></a>
+            <a href="/personal-website/"><img class="cover-img" src="images/claw.jpeg" alt="bentobox"></a>
             <div class="popup">
               <div class="popup-content">
+                <div class="popup-image">
+                  <img src="images/claw.jpeg" alt="bentobox">
+                </div>
                 <span class="close">&times;</span>
-                <h3>Project Title 3</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>BentoBox Claw Machine</h3>
+                <h4>GitHub:</h4>
+                <p>coming soon</p>
+                <h4>About:</h4>
+                <p>coming soon</p>
+
+                <h4>Key Features:</h4>
+                <p>coming soon</p>
+
+                <h4>Personal Contributions:</h4>
+                <p>coming soon</p>
+
+                <h4>Tools Used:</h4>
+                <p>coming soon</p>
+
+                <h4>Team:</h4>
+                <ul>
+                  <li>Jensen</li>
+                  <li>Eli</li>
+                  <li>Tim</li>
+                </ul>
               </div>
             </div>
           </div>
 
           <div class="proj">
-            <a href="/personal-website/"
-              ><img class="img-grid" src="images/reserve.jpg" alt="reserve"
-            /></a>
+            <a href="/personal-website/"><img class="cover-img" src="images/reserve.jpg" alt="reserve"></a>
             <div class="popup">
               <div class="popup-content">
+                <div class="popup-image">
+                  <img src="images/reserve.jpg" alt="reserve">
+                </div>
                 <span class="close">&times;</span>
-                <h3>Project Title 4</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Reserve Android App</h3>
+                <h4>GitHub:</h4>
+                <p>coming soon</p>
+                <h4>About:</h4>
+                <p>coming soon</p>
+
+                <h4>Key Features:</h4>
+                <p>coming soon</p>
+
+                <h4>Personal Contributions:</h4>
+                <p>coming soon</p>
+
+                <h4>Tools Used:</h4>
+                <p>coming soon</p>
+
+                <h4>Team:</h4>
+                <ul>
+                  <li>Jensen</li>
+                  <li>Ibrahim</li>
+                  <li>Francisco</li>
+                  <li>Joseph</li>
+                  <li>Brian</li>
+                </ul>
               </div>
             </div>
           </div>
 
           <div class="proj">
-            <a href="/personal-website/"
-            ><img src="images/nba.jpeg" alt="nba"
-          /></a>
+            <a href="/personal-website/"><img class="cover-img" src="images/nba.jpeg" alt="nba"></a>
             <div class="popup">
               <div class="popup-content">
+                <div class="popup-image">
+                  <img src="images/nba.jpeg" alt="nba">
+                </div>
                 <span class="close">&times;</span>
-                <h3>Project Title 5</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>NBA Modeling Research</h3>
+                <h4>GitHub:</h4>
+                <p>coming soon</p>
+                <h4>About:</h4>
+                <p>coming soon</p>
+
+                <h4>Key Features:</h4>
+                <p>coming soon</p>
+
+                <h4>Personal Contributions:</h4>
+                <p>coming soon</p>
+
+                <h4>Tools Used:</h4>
+                <p>coming soon</p>
+
+                <h4>Team:</h4>
+                <ul>
+                  <li>Jensen</li>
+                </ul>
               </div>
             </div>
           </div>
 
           <div class="proj">
-            <a href="/personal-website/"
-            ><img src="images/camel.jpeg" alt="camel"
-          /></a>
+            <a href="/personal-website/"><img class="cover-img" src="images/camel.jpeg" alt="camel"></a>
             <div class="popup">
               <div class="popup-content">
+                <div class="popup-image">
+                  <img src="images/camel.jpeg" alt="camel">
+                </div>
                 <span class="close">&times;</span>
-                <h3>Project Title 6</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Dunesweeper</h3>
+                <h4>GitHub:</h4>
+                <p>coming soon</p>
+                <h4>About:</h4>
+                <p>coming soon</p>
+
+                <h4>Key Features:</h4>
+                <p>coming soon</p>
+
+                <h4>Personal Contributions:</h4>
+                <p>coming soon</p>
+
+                <h4>Tools Used:</h4>
+                <p>coming soon</p>
+
+                <h4>Team:</h4>
+                <ul>
+                  <li>Jensen</li>
+                  <li>Colby</li>
+                  <li>Yvon</li>
+                  <li>Tejhan</li>
+                </ul>
               </div>
             </div>
           </div>
