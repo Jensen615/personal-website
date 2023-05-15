@@ -1,3 +1,4 @@
+// NAV BAR LOGIC //
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
 
@@ -5,8 +6,11 @@ menu.addEventListener("click", function () {
   menu.classList.toggle("is-active");
   menuLinks.classList.toggle("active");
 });
+// NAV BAR LOGIC //
 
 
+
+// EXPERIENCE SECTION TABS LOGIC // 
 const tabs = document.querySelectorAll('.work__tab1 input[type="radio"], .work__tab2 input[type="radio"], .work__tab3 input[type="radio"]');
 const tabContents = document.querySelectorAll('.tab-content');
 
@@ -80,9 +84,11 @@ function fadeIn(element) {
     }
   }, interval);
 }
+// EXPERIENCE SECTION TABS LOGIC //
 
 
-// Get all popup elements
+
+// PROJECT SECTION POPUP LOGIC //
 const popups = document.querySelectorAll('.popup');
 
 // Add click event listeners to open popups
@@ -117,3 +123,83 @@ document.addEventListener('click', (event) => {
     });
   }
 });
+// PROJECT SECTION POPUP LOGIC //
+
+
+
+// ABOUT PAGE IMAGES/TEXT LOGIC //
+document.addEventListener('DOMContentLoaded', function() {
+  const overlayClass = 'about-overlay';
+  const textClass = 'about-text';
+
+  document.addEventListener('click', function(event) {
+    const clickedElement = event.target;
+    const abimg = clickedElement.closest('.abimg');
+
+    if (!abimg) {
+      const overlays = document.querySelectorAll('.' + overlayClass);
+      overlays.forEach(function(overlay) {
+        overlay.style.display = 'none';
+        overlay.querySelectorAll('.' + textClass).forEach(function(paragraph) {
+          paragraph.style.opacity = '0';
+        });
+      });
+      return;
+    }
+
+    const overlay = abimg.querySelector('.' + overlayClass);
+    const paragraphs = overlay.querySelectorAll('.' + textClass);
+    let currentIndex = 0;
+
+    if (clickedElement.classList.contains(overlayClass)) {
+      hideParagraphs();
+      return;
+    }
+
+    if (clickedElement.classList.contains('ab-cover-img')) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (overlay.style.display === 'block') {
+        hideParagraphs();
+      } 
+      
+      else {
+        // displays block, but to display gradually
+        overlay.style.display = 'block';
+        // set only first paragraph to 1, rest set to 0
+        currentIndex = 0;
+        paragraphs.forEach(function(paragraph, index) {
+          paragraph.style.opacity = index === currentIndex ? '1' : '0';
+        });
+        currentIndex++;
+        // proceed with showing remaining paragraphs as normal
+        setTimeout(showNextParagraph, 500);
+      }
+    }
+
+    function showNextParagraph() {
+      if (currentIndex < paragraphs.length) {
+        paragraphs[currentIndex].style.opacity = '1';
+        currentIndex++;
+        setTimeout(showNextParagraph, 500);
+      }
+    }
+
+    function hideParagraphs() {
+      currentIndex = paragraphs.length - 1;
+      hideNextParagraph();
+    }
+
+    function hideNextParagraph() {
+      if (currentIndex >= 0) {
+        paragraphs[currentIndex].style.opacity = '0';
+        currentIndex--;
+        setTimeout(hideNextParagraph, 100);
+      } else {
+        overlay.style.display = 'none';
+      }
+    }
+  });
+});
+// ABOUT PAGE IMAGES/TEXT LOGIC //
