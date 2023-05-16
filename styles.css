@@ -669,9 +669,14 @@ input[type="radio"]:checked ~ .tab-content {
 
 .about__header {
   text-align: center;
-  font-size: 24pt;
-  padding: 5% 0;
-  margin: 0;
+  font-size: 2rem;
+  /* border: 2px solid black; */
+}
+
+.about__title {
+  background-color: #f2f2f2;
+  margin-top: -5%;
+  padding: 2%;
   /* border: 2px solid black; */
 }
 
@@ -680,9 +685,10 @@ input[type="radio"]:checked ~ .tab-content {
   list-style-type: none;
   font-size: 0.8rem;
   margin: 0;
-  padding: 0;
+  padding: 1%;
   display: flex;
   justify-content: center;
+  /* border: 2px solid black; */
 }
 
 .about__list li {
@@ -700,7 +706,7 @@ input[type="radio"]:checked ~ .tab-content {
 }
 
 .about__list li:hover {
-  background-color: lightgray;
+  background-color: #f2f2f2;
 }
 
 .learn-more {
@@ -816,7 +822,7 @@ input[type="radio"]:checked ~ .tab-content {
 .footer {
   background-color: #202020;
   color: #ffffffdc;
-  padding: 5% 5% 5% 10%;
+  padding: 5% 5% 5% 8%;
   /* border: 1px solid red; */
 }
 
@@ -897,5 +903,198 @@ input[type="radio"]:checked ~ .tab-content {
   transform: rotate(-135deg) translateX(15px) translateY(15px) scale(1.1);
 }
 
+
+
+/* Styles for First Container */
+.contact-header-container {
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2%;
+  /* border: 2px solid black; */
+}
+
+.about__header {
+  text-align: center;
+  font-size: 2rem;
+  padding: 5% 0;
+  margin: 0;
+  /* border: 2px solid black; */
+}
+
+
+
+/* Styles for Second Container */
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+  /* border: 2px solid black; */
+
+}
+
+.contact-info-left {
+  flex: 1;
+  /* padding: 5px; */
+  /* width: 100px; */
+  /* border: 2px solid black; */
+
+}
+
+.contact-gif img {
+  width: 350px;
+  height: 350px;
+  max-width: 60%;
+  margin-left: 25%;
+}
+
+.contact-info-right {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid black; */
+
+}
+
+.contact-icon-section {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-bottom: 25px;
+  /* border: 2px solid black; */
+  /* width: 300px; */
+
+}
+
+.contact-icon-section-l {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin-top: 5px;
+  margin-bottom: 10px;
+  /* border: 2px solid black; */
+  /* width: 300px; */
+
+}
+
+.contact-icon-1 {
+  /* display: flex; */
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  justify-content: center;
+  /* border: 2px solid black; */
+
+}
+
+.contact-icon-2 {
+  /* display: flex; */
+  margin-left: 1px;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  /* border: 2px solid black; */
+
+}
+
+.contact-icon-1 img {
+  max-width: 85%;
+}
+
+.contact-icon-2 img {
+  max-width: 100%;
+}
+
+
+.contact-icon-t {
+  /* display: flex; */
+  width: 50px;
+  height: 30px;
+  background: transparent;
+  text-align: right;
+  font-size: 1.5rem;
+  /* border: 2px solid black; */
+
+}
+
+.contact-text-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: -6px;
+  margin-left: 5%;
+  /* border: 2px solid black; */
+
+}
+
+.contact-text-section-l {
+  display: flex;
+  flex-direction: column;
+  margin-left: 4.8%;
+  margin-top: -12px;
+  /* border: 2px solid black; */
+}
+
+.contact-text {
+  font-size: 1.5rem;
+}
+
+
+/* Styles for Third Container */
+.contact-form-container {
+  text-align: left;
+  padding: 2% 8% 0% 8%;
+  margin-top: 2%;
+  /* border: 2px solid black; */
+}
+
+.contact-form-heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-form-input-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  /* border: 2px solid black; */
+}
+
+.contact-form-input-section label {
+  margin-bottom: 10px;
+}
+
+.contact-form-input-section label .required {
+  color: red;
+  font-size: 1.1rem;
+}
+
+.contact-form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.contact-submit {
+  margin-top: 0.5rem;
+  margin-left: 93%;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: #aeaeae;
+  color: #fff;
+  font-size: 1rem;
+  border: 1px solid black;
+  /* border: 2px solid black; */
+}
+
+.contact-submit:hover {
+  background-color: #7e7e7e;
+  color: #d5d5d5;
+  cursor: pointer;
+}
 
 

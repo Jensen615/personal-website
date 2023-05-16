@@ -23,17 +23,84 @@
         <ul class="navbar__menu">
           <li class="navbar__item">
             <!-- /personal-website/ -->
-            <a href="/" class="navbar__links"> HOME </a>
+            <a href="/personal-website/" class="navbar__links"> HOME </a>
           </li>
           <li class="navbar__item">
-            <a href="/about.html" class="navbar__links"> ABOUT </a>
+            <a href="/personal-website/about.html" class="navbar__links"> ABOUT </a>
           </li>
           <li class="navbar__item">
-            <a href="/contact.html" class="navbar__links"> CONTACT </a>
+            <a href="/personal-website/contact.html" class="navbar__links"> CONTACT </a>
           </li>
         </ul>
       </div>
     </nav>
+
+    <!-- First Container -->
+    <div class="contact-header-container">
+      <h1 class="contact-heading">Let's chat!</h1>
+    </div>
+
+    <!-- Second Container -->
+    <div class="contact-info-container">
+      <div class="contact-info-left">
+        <div class="contact-gif">
+          <img src="images/wave.gif" alt="wave">
+        </div>
+      </div>
+      <div class="contact-info-right">
+        <div class="contact-icon-section">
+          <div class="contact-icon-t">
+            <p>Email</p>
+            <!-- <img src="path/to/icon1" alt="Email Icon"> -->
+          </div>
+          <div class="contact-text-section">
+            <p class="contact-text">jensenandre615@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-icon-section">
+          <div class="contact-icon-t">
+            <p>Phone</p>
+            <!-- <img src="path/to/icon2" alt="Phone Icon">f -->
+          </div>
+          <div class="contact-text-section">
+            <p class="contact-text">(646) 851-3446</p>
+          </div>
+        </div>
+        <div class="contact-icon-section-l">
+          <div class="contact-icon-1">
+            <img src="images/linkedin.png" alt="linkedin">
+          </div>
+          <div class="contact-text-section-l">
+            <p class="contact-text">LinkedIn: <a href="https://www.linkedin.com/in/jensen-andre">ja.in</a></p>
+          </div>
+        </div>
+        <div class="contact-icon-section">
+          <div class="contact-icon-2">
+            <img src="images/github.png" alt="github">
+          </div>
+          <div class="contact-text-section">
+            <p class="contact-text">Github: <a href="https://github.com/Jensen615">ja.git</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Container -->
+    <div class="contact-form-container">
+      <h2 class="contact-form-heading">CONTACT</h2>
+      <div class="contact-form-input-section">
+        <label for="email-input">Email address <span class="required">*</span></label></label>
+        <input type="email" class="contact-form-input" placeholder="Email">
+      </div>
+      <div class="contact-form-input-section">
+        <label for="message-input">Message <span class="required">*</span></label></label>
+        <textarea class="contact-form-input" placeholder="Message"></textarea>
+      </div>
+      <a href="/personal-website/contact.html">
+        <button type="submit" class="contact-submit">Submit</button>
+      </a>  
+    </div>
+
         
     <script src="app.js"></script>
   </body>
@@ -43,11 +110,17 @@
     <p class="footer__text1">I’m always open to speak more about my experiences, previous and ongoing projects, and new software engineering opportunities.</p>
     <p class="footer__text2">Let's connect!</p>
     <div class="footer__links">
-      <div class="footer__link">LINKEDIN</div>
-      <div class="footer__link">GITHUB</div>
-      <div class="footer__link">RESUME</div>
+      <a href="https://www.linkedin.com/in/jensen-andre">
+        <div class="footer__link">LINKEDIN</div>
+      </a>
+      <a href="https://github.com/Jensen615">
+        <div class="footer__link">GITHUB</div>
+      </a>
+      <a href="https://drive.google.com/file/d/1oEIrRLReQ4yC98tMymu-Sy2mkG5giooV/view?usp=share_link">
+        <div class="footer__link">RESUME</div>
+      </a>  
     </div>
-    <a href="/contact.html" class="scroll-to-top">
+    <a href="/personal-website/contact.html" class="scroll-to-top">
       <span class="arrow"></span>
     </a> 
   </footer>
