@@ -203,3 +203,24 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 // ABOUT PAGE IMAGES/TEXT LOGIC //
+
+window.addEventListener('scroll', function() {
+  var footer = document.querySelector('.footer');
+  var scrollToTop = document.querySelector('.scroll-to-top');
+  var footerRect = footer.getBoundingClientRect();
+  
+  if (footerRect.top <= window.innerHeight && footerRect.bottom >= 0) {
+    scrollToTop.classList.add('active');
+  } else {
+    scrollToTop.classList.remove('active');
+  }
+});
+
+document.querySelector('.scroll-to-top').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
